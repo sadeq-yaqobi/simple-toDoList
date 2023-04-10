@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c2729c10a1.js" crossorigin="anonymous"></script>
+  <title>To Do List</title>
+</head>
+
+
+<body>
+  <div class="py-4 container bg-img">
+    <div class="container cont">
+      <!-- header -->
+      <header class="  d-flex justify-content-between align-items-baseline">
+        <a class="header-logo">کارهای روزانه</a>
+        <a class=" header-icon "><i class="fa fa-gear" aria-hidden="true"></i></a>
+      </header>
+      <!-- end header -->
+      <!-- main -->
+      <main class=" main text-center py-4">
+        <p class=" main-txt fw-bold mb-4">کارهای خود را داخل کادر وارد کنید </p>
+        <div class="mb-3">
+          <div class="input-group">
+            <input type="text" class="form-control " placeholder="آیتم جدید..." id="todo-input">
+            <div class="input-group-append">
+              <button type="button" id="btn-pencil" class="btn "><i class="fa fa-pencil-square-o"></i></button>
+            </div>
+          </div>
+          <small class="form-text text-muted " id="todoHelp">پس از اتمام کار روی آن کلیک کنید.</small>
+        </div>
+      </main>
+      <!-- end main -->
+      <!-- to do list -->
+      <div class="row ">
+        <div class="col-12 listItems m-0">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <!-- end to do list -->
+    </div>
+  </div>
+
+</body>
+<script src="js/myJavaScript.js"></script>
+
+</html>

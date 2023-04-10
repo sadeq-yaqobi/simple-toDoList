@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "iranYekan";
+    src: url(../fonts/iranyekanwebblack.woff) format(woff);
+}
+@font-face {
+    font-family: 'aviny';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/avinyWeb.woff) format('woff');
+}
+@font-face {
+    font-family: 'iranSanse';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/IRANSansWeb.woff) format('woff');
+}
+body{
+    font-family: 'iranSanse'!important;
+    background-color: #fff!important;
+    color: #000505!important;
+    position: relative;
+    direction: rtl!important;
+}
+a{
+    text-decoration: none!important;
+    transition: .5s;
+    cursor: pointer;
+}
+a:hover{
+    color: #FFFF1f!important;
+    transform: translateY(-2px);
+}
+.bg-img{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(../images/03-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.bg-img::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgb(39, 173, 235);
+    background: linear-gradient(45deg, rgba(39,173,235,0.7) 29%, rgba(39,173,235,0.8) 78%);
+    z-index: 2;
+}
+.cont{
+    position: relative;
+    z-index: 10;
+}
+/* header */
+.header-logo{
+    font-family: 'iranYekan'!important;
+    color: #FFFF61;
+    text-shadow: 2px 2px 8px #000505!important;
+    font-size: 24px;
+    
+
+}
+.header-icon{
+    color: #FFFF61;
+    text-shadow: 2px 2px 8px #000505!important;
+    font-size: 24px;
+}
+/* main */
+.main-txt{
+    font-family:'iranYekan'!important ;
+    font-size: 28px;
+    text-shadow: 2px 2px 8px  #FFF;
+    
+}
+#todo-input{
+    border-radius: 5px!important;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px   #000505!important;
+    padding:10px 20px;
+    
+}
+#todo-input:focus{
+    box-shadow: 0px 0px 8px   #000505!important;
+}
+#btn-pencil{
+    background-color: #FB6107!important;
+    color: #fff!important;
+    padding: 15px 40px!important;
+    margin-right:10px ;
+    box-shadow: 0px 0px 3px   #000505!important;
+    transition: .5s;
+}
+#btn-pencil:hover{
+transform: scale(1.1);
+
+}
+#btn-pencil:active{
+    background-color: #FFFF1f!important;
+}
+#todoHelp{
+    text-align: right!important;
+    color: #FB6107!important;
+    display: block;
+    text-shadow: 0px 0px 5px #fff!important;
+}
+/* empty list */
+ul{
+    margin: 20px 0 0 0;
+    
+    padding: 0!important;
+}
+li{
+    list-style: none;
+    text-transform: capitalize;
+    border: 2px solid #FFFF85 ;
+    color: #000505;
+    background-color:#FFFF99 ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5 ease;
+    cursor: pointer;
+    display: flex;
+    justify-content:space-between;
+}
+li:hover{
+    background-color: #FFFF85;
+}
+.done{
+    background-color:#85FFC7!important ;
+    border: 2px solid #00B862 ;
+
+}
+.delete-btn{
+    background-color:transparent!important;
+    border: 0;
+    outline: 0;
+    color: red;
+    transition: .5s;
+}
+.delete-btn:hover{
+    scale:1.2!important ;
+}
+.delete-item{
+    display: none;
+}
