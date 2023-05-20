@@ -2,7 +2,7 @@
 
 This is a simple web application that allows you to create and manage your to-do list. You can add new tasks, mark them as completed, and delete tasks as needed.
 
-![Demo](images/preview-toDoList01.png)
+Check out the Simple ToDo List [here](https://sadeq-yaqobi.github.io/simple-toDoList/).
 
 ## Features
 
